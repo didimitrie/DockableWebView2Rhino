@@ -17,6 +17,7 @@
     <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.1245.22" />
     <PackageReference Include="RhinoCommon" Version="7.13.21348.13001" IncludeAssets="compile;build" />
     <PackageReference Include="RhinoWindows" Version="7.13.21348.13001" />
+    <PackageReference Include="System.Text.Json" Version="6.0.5" />
   </ItemGroup>
   
   <ItemGroup>

@@ -12,7 +12,12 @@
   </UserControl.Resources>
   <DockPanel>
     <Grid>
-      <wv2:WebView2 CreationProperties="{StaticResource EvergreenWebView2CreationProperties}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" x:Name="myWebView" Source="http://100.66.180.109:8080/"/>
+      <wv2:WebView2 
+        CreationProperties="{StaticResource EvergreenWebView2CreationProperties}" 
+        HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+        x:Name="myWebView" 
+        WebMessageReceived="MessageReceivedInternal"
+        Source="http://100.66.180.109:8080/"/>
     </Grid>
   </DockPanel>
 </UserControl>

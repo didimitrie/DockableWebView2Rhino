@@ -20,9 +20,16 @@ namespace RhDockableWebView2
   /// </summary>
   public partial class DockPage : UserControl
   {
-    public DockPage()
+    WV2DockBar _parent;
+    public DockPage(WV2DockBar Parent)
     {
       InitializeComponent();
+      _parent = Parent;
+    }
+
+    private void MessageReceivedInternal(object sender, Microsoft.Web.WebView2.Core.CoreWebView2WebMessageReceivedEventArgs e)
+    {
+      _parent.ReceiveFromBrowser(sender, e);
     }
   }
 }
